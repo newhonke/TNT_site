@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TNT NETWORK</title>
+    <link rel="icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-matrix-bg" id="loading-matrix"></div>
+      <div class="loading-content">
+        <div class="loading-header">
+          <h1 class="loading-title glitch-text">TNT NETWORK</h1>
+          <p class="loading-subtitle">SYSTEM INITIALIZATION</p>
+        </div>
+        <div class="loading-terminal">
+          <div id="loading-messages" class="loading-messages"></div>
+          <div class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+          <div id="progress-text" class="progress-text">0%</div>
+        </div>
+        <div class="loading-wait">PLEASE WAIT...</div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content hidden">
+      <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+      <div class="scanlines"></div>
+
+      <div class="container">
+        <!-- Header -->
+        <header class="header animate-header">
+          <div class="header-info">
+            <h1 class="site-title">
+              <span class="glitch-wrapper">
+                <span class="glitch-text" data-text="TEAM NIGHT TROLL"
+                  >TEAM NIGHT TROLL</span
+                >
+              </span>
+            </h1>
+            <div class="status-info">
+              <div class="status-line">
+                <span class="status-dot"></span>
+                STATUS : ACTIVE
+              </div>
+              <div>NETWORK : ONLINE</div>
+              <div>FOUNDED : 2026</div>
+            </div>
+          </div>
+          <nav class="nav">
+            <a href="#about" class="nav-link"
+              >ABOUT<span class="nav-underline"></span
+            ></a>
+            <a href="#operations" class="nav-link"
+              >OPERATIONS<span class="nav-underline"></span
+            ></a>
+            <a href="#join" class="nav-link"
+              >JOIN<span class="nav-underline"></span
+            ></a>
+            <a href="#network" class="nav-link"
+              >NETWORK<span class="nav-underline"></span
+            ></a>
+          </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero animate-hero">
+          <div class="hero-typing">
+            <span class="typing-line">&gt;&gt; ACCESSING TNT NETWORK</span>
+            <br />
+            <span class="typing-line">&gt;&gt; CONNECTION ESTABLISHED</span>
+          </div>
+          <h2 class="hero-title">
+            <span class="glitch-wrapper block">
+              <span class="glitch-text" data-text="We are the noise"
+                >We are the noise</span
+              >
+            </span>
+            <span class="glitch-wrapper block">
+              <span class="glitch-text" data-text="in the system"
+                >in the system</span
+              >
+            </span>
+          </h2>
+          <p class="hero-description">
+            Team Night Troll is an independent network.<br />
+            We operate across platforms.<br />
+            We observe. We interfere.
+          </p>
+          <div id="terminal" class="terminal">
+            <div id="terminal-content"></div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+          <h3 class="section-title">
+            <span class="glitch-wrapper">
+              <span class="glitch-text" data-text="ABOUT NETWORK"
+                >ABOUT NETWORK</span
+              >
+            </span>
+          </h3>
+          <div class="hacker-card" data-delay="100">
+            <div class="card-corners">
+              <div class="corner corner-tl"></div>
+              <div class="corner corner-tr"></div>
+              <div class="corner corner-bl"></div>
+              <div class="corner corner-br"></div>
+            </div>
+            <p>OWNER : <span class="text-primary">yu__77_</span></p>
+            <p>MEMBERS : <span class="text-primary">UNKNOWN</span></p>
+            <p>STRUCTURE : <span class="text-primary">DECENTRALIZED</span></p>
+            <p>OBJECTIVE : <span class="text-primary">ENTERTAINMENT</span></p>
+          </div>
+        </section>
+
+        <!-- Operations -->
+        <section id="operations" class="section">
+          <h3 class="section-title">
+            <span class="glitch-wrapper">
+              <span class="glitch-text" data-text="OPERATIONS LOG"
+                >OPERATIONS LOG</span
+              >
+            </span>
+          </h3>
+          <div class="cards-stack">
+            <div class="hacker-card" data-delay="200">
+              <div class="card-corners">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-tr"></div>
+                <div class="corner corner-bl"></div>
+                <div class="corner corner-br"></div>
+              </div>
+              <p class="mb-1">
+                OPERATION :
+                <span class="text-primary">The Troll of YouTube Live</span>
+              </p>
+              <p class="text-muted">STATUS : COMPLETED</p>
+              <p class="text-primary">
+                <a
+                  href="https://x.com/y7rr_s/status/2029919595059146773"
+                  class="link-hover"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  RESULT : SUCCESS
+                </a>
+              </p>
+            </div>
+            <div class="hacker-card" data-delay="400">
+              <div class="card-corners">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-tr"></div>
+                <div class="corner corner-bl"></div>
+                <div class="corner corner-br"></div>
+              </div>
+              <p class="mb-1">
+                OPERATION :
+                <span class="text-primary">The Troll of Matching World</span>
+              </p>
+              <p class="text-muted">STATUS : COMPLETED</p>
+              <p class="text-primary">
+                <a
+                  href="https://x.com/y7rr_s/status/2008043731929501704"
+                  class="link-hover"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  RESULT : SUCCESS
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Network -->
+        <section id="network" class="section">
+          <h3 class="section-title">
+            <span class="glitch-wrapper">
+              <span class="glitch-text" data-text="NETWORK ACCESS"
+                >NETWORK ACCESS</span
+              >
+            </span>
+          </h3>
+          <div class="cards-stack">
+            <div class="hacker-card" data-delay="300">
+              <div class="card-corners">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-tr"></div>
+                <div class="corner corner-bl"></div>
+                <div class="corner corner-br"></div>
+              </div>
+              <p class="text-muted mb-2">DISCORD ENTRY POINT:</p>
+              <a
+                href="https://discord.gg/jqhmMWZE"
+                class="link-hover"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>discord.gg/jqhmMWZE</span>
+                <span class="link-arrow">&rarr;</span>
+              </a>
+            </div>
+            <div class="hacker-card" data-delay="500">
+              <div class="card-corners">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-tr"></div>
+                <div class="corner corner-bl"></div>
+                <div class="corner corner-br"></div>
+              </div>
+              <p class="text-muted mb-2">VRCHAT GROUP:</p>
+              <a
+                href="https://vrchat.com/home/group/grp_53c23830-01eb-47c8-85b1-e2bfd3e746ca"
+                class="link-hover"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>VRChat Network</span>
+                <span class="link-arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Join -->
+        <section id="join" class="section section-center">
+          <h3 class="section-title">
+            <span class="glitch-wrapper">
+              <span class="glitch-text" data-text="JOIN THE NETWORK"
+                >JOIN THE NETWORK</span
+              >
+            </span>
+          </h3>
+          <div class="join-requirements">
+            <p class="mb-4">Requirements:</p>
+            <p>&gt;&gt; Discord account</p>
+            <p>&gt;&gt; Motivation</p>
+            <p>&gt;&gt; Basic knowledge</p>
+          </div>
+          <a
+            href="https://discord.gg/jqhmMWZE"
+            class="cta-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>REQUEST ACCESS</span>
+          </a>
+          <p class="join-note">
+            We do not recruit.<br />
+            You find us.
+          </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-status">
+            <span class="status-dot"></span>
+            SYSTEM STATUS : ONLINE
+          </div>
+          <p>&copy; TNT NETWORK</p>
+          <p>THIS SITE IS INDEPENDENT</p>
+        </footer>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
